@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0a0a0a;
+    color: #e6e6e6;
+}
+
+h1, h2, h3 {
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-block, 
+.gallery-section,
+.contact,
+footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    width: 100%;
+    background-color: #000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d4af37;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+.top-presentation {
+    width: 100%;
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #d4af37;
+}
+
+.top-presentation img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(212,175,55,0.4);
+}
+
+.hero {
+    background: url('fondo.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.section-block {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-block p {
+    color: #c2c2c2;
+}
+
+.section-block,
+.section-block p,
+.specialty-box,
+.specialty-box p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 484px;
+    border-radius: 10px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 25px rgba(212,175,55,0.25);
+    margin-top: 20px;
+}
+
+.section-photo.ops img {
+    max-width: 1025px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 30px rgba(212,175,55,0.35);
+}
+
+.specialty-box {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.specialty-box img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border: 3px solid #d4af37; /* borde dorado por defecto */
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(212,175,55,0.3);
+    background-color: #fff;
+}
+
+.specialty-box.piloto img,
+.specialty-box.reconocimiento img,
+.specialty-box.radioperador img,
+.specialty-box.medico img {
+    border-color: #ffffff !important;
+}
+
+.specialty-box.operacion-z img {
+    border-color: red !important;
+}
+
+.gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(212,175,55,0.2);
+}
+
+.contact {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #0d0d0d;
+    border-top: 1px solid #d4af37;
+}
+
+.contact-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #d4af37;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #d4af37;
+    background-color: #000;
+    color: #cfcfcf;
+}
+
+.about {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.specialties-section {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.specialty-block {
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+@media (max-width: 600px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-block p,
+    .gallery-section,
+    .contact,
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .section-photo img,
+    .section-photo.ops img,
+    .gallery img,
+    .specialty-box img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
